@@ -3,6 +3,6 @@ import { roomServiceDefinition } from "./roomService.js";
 
 const definitions = [collectStatsDefinition, roomServiceDefinition];
 
-export const allDefinitions = (agenda) => {
-  definitions.forEach((definitions) => definitions(agenda));
+export const registerJobs = (agenda) => {
+  definitions.forEach((definition) => definition(agenda));
 };
